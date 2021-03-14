@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="Stocks3" customModuleProvider="target">
+            <connections>
+                <outlet property="findStockTableView" destination="eRR-TI-6YP" id="yfp-Z1-vgj"/>
+                <outlet property="searchBar" destination="mPa-a1-MT0" id="gNd-YU-nPr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="mPa-a1-MT0">
+                    <rect key="frame" x="0.0" y="55" width="414" height="56"/>
+                    <color key="barTintColor" systemColor="systemPinkColor"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stocks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ex-7g-atn">
+                    <rect key="frame" x="16" y="16" width="94" height="39"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                    <color key="textColor" systemColor="systemPinkColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eRR-TI-6YP">
+                    <rect key="frame" x="0.0" y="111" width="414" height="785"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="4ex-7g-atn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="0Cd-o5-6LD"/>
+                <constraint firstItem="mPa-a1-MT0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0PS-5Q-HRF"/>
+                <constraint firstItem="mPa-a1-MT0" firstAttribute="top" secondItem="4ex-7g-atn" secondAttribute="bottom" id="6EH-9T-15a"/>
+                <constraint firstItem="eRR-TI-6YP" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="BDS-8w-aWY"/>
+                <constraint firstItem="eRR-TI-6YP" firstAttribute="top" secondItem="mPa-a1-MT0" secondAttribute="bottom" id="GZm-Qo-kcS"/>
+                <constraint firstItem="eRR-TI-6YP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gKM-6q-x87"/>
+                <constraint firstItem="mPa-a1-MT0" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ouh-mW-R20"/>
+                <constraint firstItem="4ex-7g-atn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="x5B-Y0-0wQ"/>
+                <constraint firstAttribute="bottom" secondItem="eRR-TI-6YP" secondAttribute="bottom" id="znv-4v-sNi"/>
+            </constraints>
+            <point key="canvasLocation" x="21.739130434782609" y="84.375"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
